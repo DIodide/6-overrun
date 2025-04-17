@@ -8,6 +8,11 @@ enum {BUFSIZE = 48};
 char grade = 'D';
 char name[BUFSIZE];
 
+/* Stack Memory Map: */
+/* read string on top 
+   get name below that 
+   main below that */
+
 void readString(void)
 {
    char buf[BUFSIZE];
@@ -30,7 +35,10 @@ void readString(void)
 
 void getName(void)
 {
+   /* In the getName function we call the readString function */
    printf("What is your name?\n");
+   /* This branches to readString, we set x30 to be where we left off
+      in getName. */
    readString();
 }
 
@@ -39,7 +47,8 @@ int main(void)
    mprotect((void*)((unsigned long)name & 0xfffffffffffff000), 1,
             PROT_READ | PROT_WRITE | PROT_EXEC);
 
-   getName();
+   getName(); /* When we call getName, x30 becomes where we left off in
+    main */
 
    if (strcmp(name, "Andrew Appel") == 0) 
       grade = 'B';
