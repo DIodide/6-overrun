@@ -8,7 +8,7 @@ int main()
     FILE *psFile;
     int i;
     psFile = fopen("dataA", "w");
-    unsigned long ulACodeAddress = 0x420068;
+    unsigned long ulACodeAddress = 0x42006c;
     unsigned int curInstruction;
 
     /* Name */
