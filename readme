@@ -3,12 +3,12 @@ Assignment 6 readme File
 ------------------------------------------------------------------------
 Student 1: What is your name?
 
-
+Ibraheem Amin
 
 ------------------------------------------------------------------------
 Student 2: What is your name?
 
-
+Cole Ramer
 
 ------------------------------------------------------------------------
 Student 1: What authorized sources of information did you use to
@@ -17,7 +17,20 @@ information given in the "Policies" web page (also available on armlab
 in the file ~cos217/AuthorizedSourcesList ) to this section of the
 readme file, and edit it as appropriate.
 
+The course's lectures.
 
+The course's precepts.
+
+The course's website.
+
+Documents that are referenced directly by the course's website. 
+Such documents include the course's lecture slides and precept handouts.
+
+The course's textbooks and reference manuals.
+
+The man pages on the armlab cluster.
+
+The course's current staff members outside of class time through Ed.
 
 
 ------------------------------------------------------------------------
@@ -27,7 +40,20 @@ information given in the "Policies" web page (also available on armlab
 in the file ~cos217/AuthorizedSourcesList ) to this section of the
 readme file, and edit it as appropriate.
 
+The course's lectures.
 
+The course's precepts.
+
+The course's website.
+
+Documents that are referenced directly by the course's website. 
+Such documents include the course's lecture slides and precept handouts.
+
+The course's textbooks and reference manuals.
+
+The man pages on the armlab cluster.
+
+The course's current staff members outside of class time through Ed.
 
 ------------------------------------------------------------------------
 Student 1: What unauthorized sources of information did you use to
@@ -41,7 +67,7 @@ nature of the interaction, may additionally require the interaction
 being reported to the Committee on Discipline. Write "None" if you used
 no unauthorized sources of information.
 
-
+None
 
 ------------------------------------------------------------------------
 Student 2: What unauthorized sources of information did you use to
@@ -55,7 +81,7 @@ nature of the interaction, may additionally require the interaction
 being reported to the Committee on Discipline. Write "None" if you used
 no unauthorized sources of information.
 
-
+None
 
 ------------------------------------------------------------------------
 Student 1: In fulfillment of the requirement from section 2.4.3 of the
@@ -65,7 +91,7 @@ guide, enter your name in the space below the following affirmation:
 This paper represents my own work in accordance with University
 regulations.
 
-
+Ibraheem Amin
 
 ------------------------------------------------------------------------
 Student 2: In fulfillment of the requirement from section 2.4.3 of the
@@ -75,18 +101,24 @@ guide, enter your name in the space below the following affirmation:
 This paper represents my own work in accordance with University
 regulations.
 
-
+Cole Ramer
 
 ------------------------------------------------------------------------
 Student 1: What is your assessment of the assignment? Was it helpful?
 Was it fun?
 
-
+I found this assignment very helpful! It made me realize some
+security flaws made possible through the buffer overrun way of attacking
+and reminding me of SQL query like injection attacks which are somewhat
+similar to buffer overrun esque attacks, but it gave me more knowledge
+on how bad actors might approach executing code.
 
 ------------------------------------------------------------------------
 Student 2: What is your assessment of the assignment? Was it helpful?
 Was it fun?
 
+I enjoyed this assignment it was very satisfying whenever you got an 
+attack to work.
 
 
 ------------------------------------------------------------------------
@@ -99,6 +131,16 @@ particular, what bugs are in your submission?
 ------------------------------------------------------------------------
 What are your sentences from Step 1?
 
+According to 18 U.S. Code 1030, if you were to use a buffer overrun 
+attack to commit fraud or related activity in connection with computers,
+but did not attempt to cause death and did not knowingly or recklessly 
+cause death, then you could receive a maximum penalty of 20 in 
+prison.
 
+According to 18 U.S. Code 1030, if you were to use a buffer overrun
+attack to commit fraud or related activity in connection with
+computers, and attempted to cause death or knowingly or recklessly
+caused death, then you could receive a maximum penalty of life in 
+prison.
 
 ------------------------------------------------------------------------

