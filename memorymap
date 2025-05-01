@@ -14,7 +14,7 @@ Address (in hex), Description
 0x420062        , name[10]
 0x420063        , name[11]
 0x420064        , name[12]
-0x420065        , name[13] // end of ibraheem amin
+0x420065        , name[13] // end of Ibraheem Amin
 0x420066        , name[14]
 0x420067        , name[15]
 0x420068        , name[16] 
