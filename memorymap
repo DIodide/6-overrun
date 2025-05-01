@@ -14,14 +14,14 @@ Address (in hex), Description
 0x420062        , name[10]
 0x420063        , name[11]
 0x420064        , name[12]
-0x420065        , name[13] // end of ibraheem amin
+0x420065        , name[13] // end of Ibraheem Amin
 0x420066        , name[14]
 0x420067        , name[15]
 0x420068        , name[16] // actual start of our assembly code
 0x420069        , name[17]
 0x42006a        , name[18]
 0x42006b        , name[19]
-0x42006c        , name[20] // given adress for adress instruction
+0x42006c        , name[20] // given adress for address instruction
 0x42006d        , name[21]
 0x42006e        , name[22]
 0x42006f        , name[23]
@@ -29,7 +29,7 @@ Address (in hex), Description
 0x420071        , name[25]
 0x420072        , name[26]
 0x420073        , name[27]
-0x420074        , name[28] // given adress of branch instruction
+0x420074        , name[28] // given address of branch instruction
 0x420075        , name[29]
 0x420076        , name[30]
 0x420077        , name[31]
