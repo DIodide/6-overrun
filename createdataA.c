@@ -20,7 +20,6 @@ int main()
     {
         putc(0, psFile);
     }
-
     /* mov w0, 'A' */
     curInstruction = MiniAssembler_mov(0, 0x41);
     fwrite(&curInstruction, sizeof(unsigned int), 1, psFile);
